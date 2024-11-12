@@ -50,3 +50,33 @@
 .animate-love {
     animation: love 5s ease-in-out infinite;
 }
+
+
+
+/* Flower Animation Style */
+.flower-animation {
+    top: 0;
+    left: 10%;
+    animation: float 2s infinite ease-in-out;
+}
+
+.flower-icon {
+    opacity: 0.5;
+    transition: transform 0.3s;
+}
+
+/* Scale Effect on Hover */
+.flower-icon:hover {
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
